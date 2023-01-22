@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML class="hideBars">
+    <TITLE>Kingdom</TITLE>
+    <head>
+        <link rel="icon" href="assets/icon.png">
+        <link href="assets/mainui.css" rel="stylesheet" type="text/css">
+        <script src="mainUI.js"></script>
+        <script src="assets/kingdom-game/game.js"></script>
+        <link href="assets/kingdom-game/game.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+    </head>
+<body>
+    <div class="edge Left"></div>
+    <div class="edge Right"></div>
+    <div id="mainGrid" class="gameGrid"></div>
+    <div class="topBarContainer">
+        <div class="topBar Gold"><p class="topBar Gold Text" id="goldTotal"></p></div>
+        <img src="assets/toolbarBookend.png">
+        <div class="topBar Wood"><p class="topBar Wood Text" id="woodTotal"></p></div>
+        <img src="assets/toolbarBookend.png">
+        <div class="topBar Stone"><p class="topBar Stone Text" id="stoneTotal"></p></div>
+        <img src="assets/toolbarBookend.png">
+        <div class="topBar Pop"><p class="topBar Pop Text" id="popTotal"></p></div>
+        <img src="assets/toolbarBookend.png">
+        <div class="topBar Rest"></div>
+    </div>
+    
+        <div class="accntContainer">
+            <div class="accntMenu">
+                    <img src="assets/title.png" style="position:relative; top: 12px; right:5px; border-radius:4px;">
+                    <input class="accnt" type="text" placeholder="username">
+                    <input class="accnt" type="password" placeholder="password">
+                    <input class="accnt" type="text" placeholder="email">
+                    <button class="playButton">
+            </div>    
+    </div>
+    
+    
+    <div class="menuContainer" id="menuContainerBuild">
+            <ul class="menuBuild">
+                <button class="buildOption House" id="buildHousejs">BUILD HOUSE</button>
+                <button class="buildOption Sawmill" id="buildSawmilljs">BUILD SAWMILL</button>
+                <button class="buildOption Quarry" id="buildQuarryjs">BUILD QUARRY</button>
+                <button class="buildOption Farm" id="buildFarmjs">BUILD FARM</button>
+            </ul>
+    </div>
+        <div class="toolbarContainer">
+            <div><img src="assets/toolbarBookend.png"></div>
+            <button id="toolbarBuild" class="toolbarButton" onclick="openMenu()">BUILD</button>
+            <img src="assets/toolbarBookend.png">
+            <button id="toolbarWorld" class="toolbarButton">WORLD</button>
+            <img src="assets/toolbarBookend.png">
+            <button id="toolbarNews" class="toolbarButton">NEWS</button>
+            <img src="assets/toolbarBookend.png">
+            <button id="toolbarProgress" class="toolbarButton">PROGRESS</button>
+            <img src="assets/toolbarBookend.png">
+            <button id="toolbarAccount" class="toolbarButton">ACCOUNT</button>
+            <img src="assets/toolbarBookend.png">
+            <button id="toolbarOptions" class="toolbarButton">OPTIONS</button>
+            <img src="assets/toolbarBookend.png">
+        </div>
+    </body>
+</HTML>

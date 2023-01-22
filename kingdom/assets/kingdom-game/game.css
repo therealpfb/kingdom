@@ -1,0 +1,43 @@
+.gameGrid {
+    position:absolute;
+    height:2198px;
+    width:2198px;
+    background:url(gridCell.png);
+    cursor:crosshair;
+    overflow:auto;
+    z-index:0;
+}
+
+.buildOption {
+    position:relative;
+    background:url(buildOption.png);
+    margin-top:4px;
+    width:220px;
+    left:-24px;
+    height:60px;
+    border:none;
+    color: rgb(93, 87, 87);
+    font-family:Cambria;
+    font-size:16px;
+    text-align:center;
+    cursor:pointer;
+    transition:200ms;
+}
+
+    .buildOption:hover {
+        border:outset;
+        border-width:3px;
+        border-color:rgb(87, 86, 80);
+    }
+
+    .buildOption:active {
+        opacity:50%;
+        transition:0ms
+    }
+        .buildOption.House {
+            background:url(buildHouse.png);
+        }
+
+        .buildOption.Farm {
+            background:url(buildFarm.png);
+        }
